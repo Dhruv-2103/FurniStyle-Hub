@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 14px 20px;
+}
+
+nav a:hover {
+  background-color: #ddddddc9;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.welcome-msg {
+  text-align: center;
+  padding: 20px;
+}
+
+.welcome-msg h2 {
+  font-size: 2em;
+}
+
+/* Mobile Style */
+@media only screen and (min-width: 768px) {
+  .container {
+      flex-direction: row;
+      justify-content: space-around;
+  }
+
+  .welcome-msg {
+      text-align: left;
+      padding: 20px;
+  }
+
+  img {
+      max-width: 75%;
+      order: 1;
+  }
+
+  .welcome-msg {
+      order: 2;
+  }
+
+  nav a {
+      font-size: 18px;
+  }
+}
+
+footer {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  color: #333;
+}
+
